@@ -1,2 +1,3 @@
 # ExcuseGenerator
-Excuse Generator Project
+Excuse Generator Project with JS
+Project for 4GeeksAcademy
