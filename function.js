@@ -1,22 +1,19 @@
-window.onload = () => {
-    document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#excuse").innerHTML = excuseGenerator();
-    });
-}
+let who = ['The dog','My grandma','His turtle','My bird'];
+let action = ['ate','peed','crushed','broke'];
+let what = ['my homework', 'the keys', 'the car'];
+let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
 
+function randomValue(arr, x){
+    let vindex = Math.floor(Math.random() * (x - 1));
+    return arr[vindex];
+} 
+let htmlwho = randomValue(who, who.length);
+let htmlaction = randomValue(action, action.length);
+let htmlwhat = randomValue(what, what.length);
+let htmlwhen = randomValue(when, when.length);
 
-let excuseGenerator = () => {
-    let who = ["Donald Trump", "The Sealion", "Metallica", "Ignacio Santos","Bryan Ruiz", "Beyonce", "El Porcionzón"];
-    let action = ["burned", "took the axe and destroyed", "peed", "flushed down the drain", "kissed","kicked", "licked", "smelled"];
-    let what = ["my laptop", "my 4Geeks assignment", "my brother", "my private jet plain", "my selfsteem", "my crotch", "armpit"];
-    let when = ["while I was taking a dump.", "after I ran a marathon.", "before COVID-19.", "right when my crush was passing by.", "while I was fishing."];
-    
-    let whoIndex = Math.floor(Math.random() * who.length); 
-    let actionIndex = Math.floor(Math.random() * action.length);
-    let whatIndex = Math.floor(Math.random() * what.length);
-    let whenIndex = Math.floor(Math.random() * when.length);
+let finalExcuse = htmlwho.concat(" ", htmlaction, " ", htmlwhat, " ", htmlwhen, ".");
+console.log(finalExcuse);
 
-    return who[whoIndex] + " " + action[actionIndex] + " " + what[whatIndex] + " " + when[whenIndex];
-    who.concat(action, what, when);
-}
+document.getElementById("excuse").innerHTML = finalExcuse;
 
