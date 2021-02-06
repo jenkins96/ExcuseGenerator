@@ -1,7 +1,7 @@
-let who = ['The dog','My grandma','His turtle','My bird'];
-let action = ['ate','peed','crushed','broke'];
-let what = ['my homework', 'the keys', 'the car'];
-let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+let who = ['Donald Trump','El Porcionzón','Ignacio Santos','Arnold Schwarzenegger'];
+let action = ['burned','peed','crushed','kissed', 'took the axe and destroyed', 'smelled'];
+let what = ['my 4Geeks homework', 'my laptop', 'my crotch', 'our family dinner', 'my internet'];
+let when = ['before COVID-19','right when my crush was passing by','when I was taking a dump','during my karaoke session','while I was fishing'];
 
 function randomValue(arr, x){
     let vindex = Math.floor(Math.random() * (x - 1));
