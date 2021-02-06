@@ -8,8 +8,12 @@ h2{
     font-family: 'Sriracha', cursive;
     color: #00ffbf;
 }
-
-
+img{
+    width: 250px;
+    height: 250px;
+    margin-top: 2em;
+    border-radius: 15%; 
+}
 /* Selectores de clase */
 .container{
     margin: auto;
@@ -24,12 +28,6 @@ h2{
 .container__img{
     display: flex;
     justify-content: center;  
-}
-img{
-    width: 250px;
-    height: 250px;
-    margin-top: 2em;
-    border-radius: 15%; 
 }
 .container__excuse{
     display: flex;
